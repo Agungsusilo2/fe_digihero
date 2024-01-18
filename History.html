@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | By Code Info</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <img src="/img/Digihero Logo.png" alt="" />
+                </a>
+            </li>
+
+            <p style="margin-left: 16px; margin-top: 20px; z-index: 9999">
+                Features
+            </p>
+            <li style="margin-top: -6px; z-index: 1">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-wallet"></i>
+                    <span class="nav-item">History Program</span>
+                </a>
+            </li>
+                <a href="" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="main">
+        <div class="main-top">
+            <h1>Data Applicant</h1>
+            <i class="fas fa-user-cog"></i>
+        </div>
+        <div class="divider"></div>
+        <section class="main-course">
+            <div class="course-box">
+                <ul>
+                    <li class="active">Data Progress Apply Applicants</li>
+                </ul>
+                <div class="filter-container">
+                    <label for="status-filter">Filter by Status:</label>
+                    <select id="status-filter">
+                        <option value="all">All</option>
+                        <option value="new">New</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr style="bor">
+                        <th>No.</th>
+                        <th>Code</th>
+                        <th>Tanggal </th>
+                        <th>Profile_Heroes</th>
+                        <th>Nama_Program</th>
+                        <th >Status</th>
+                        <th>Detail</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ range .posts }}
+                    <tr>
+                        <td>01.</td>
+                        <td>HRS-0000101</td>
+                        <td>20-12-2023</td>
+                        <td class="profile-cell">
+                            <img src="/img/muka.png" alt="Small Avatar" class="small-avatar" />
+                            <span>Gwen Chana</span>
+                        </td>
+                        <td>Pemberian Edukasi..</td>
+                        <td class="status">Relawan Baru</td>
+                        <td>{{ .Detail }}</td>
+                    </tr>
+                    {{ end }}
+                    </tbody>
+                </table>
+                <div class="course">
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+</body>
+</html>

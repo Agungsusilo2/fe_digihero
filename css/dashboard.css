@@ -190,3 +190,215 @@ a:hover{
 .js{
   color: rgb(28, 98, 179);
 }
+
+/* Tambahkan CSS berikut ke dalam file dashboard.css Anda */
+
+/* Reset margin dan padding pada tabel */
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set lebar tabel agar 100% dari container */
+.table {
+  width: 100%;
+}
+
+/* Atur lebar kolom sesuai kebutuhan */
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Atur warna latar belakang baris bergantian */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Atur warna latar belakang baris saat dihover */
+tbody tr:hover {
+  background-color:rgba(169, 214, 229, 0.34);
+}
+
+
+/* Atur lebar kolom pertama (Nomor) */
+th:first-child, td:first-child {
+  width: 5%;
+}
+
+/* Atur lebar kolom Code */
+th:nth-child(2), td:nth-child(2) {
+  width: 15%;
+}
+
+/* Atur lebar kolom Tanggal */
+th:nth-child(3), td:nth-child(3) {
+  width: 15%;
+}
+
+/* Atur lebar kolom Profile Heroes */
+th:nth-child(4), td:nth-child(4) {
+  width: 20%;
+}
+
+/* Atur lebar kolom Nama Program */
+th:nth-child(5), td:nth-child(5) {
+  width: 20%;
+}
+
+/* Atur lebar kolom Status */
+th:nth-child(6), td:nth-child(6) {
+  width: 10%;
+}
+
+/* Atur lebar kolom Detail */
+th:last-child, td:last-child {
+  width: 15%;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.main-course {
+  margin-top: 20px;
+}
+
+.course-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box ul {
+  list-style: none;
+  display: flex;
+}
+
+.course-box ul li {
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.course-box ul .active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+/* Gaya untuk filter */
+.filter-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.main-course {
+  margin-top: 20px;
+}
+
+.course-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box ul {
+  list-style: none;
+  display: flex;
+}
+
+.course-box ul li {
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.course-box ul .active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+
+.small-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.main-course {
+  margin-top: 20px;
+}
+
+.course-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box ul {
+  list-style: none;
+  display: flex;
+}
+
+.course-box ul li {
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.course-box ul .active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+
+/* Gaya untuk kolom Profile_Heroes */
+.profile-cell {
+  display: flex;
+  align-items: center;
+}
+
+/* Gaya untuk avatar kecil */
+.small-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Gaya untuk nama di kolom Profile_Heroes */
+.profile-cell span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.status{
+  border-radius: 30px;
+  border: 1px solid #01497C;
+  background: rgba(169, 214, 229, 0.73);
+}
+
